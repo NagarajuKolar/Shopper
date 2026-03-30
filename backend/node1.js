@@ -44,7 +44,7 @@
 
 
 // const mongoose = require("mongoose");
-// const MongoDB_Url = "mongodb+srv://kolarnagaraju_db_user:Naga0806@cluster0.0uiweuy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// const MongoDB_Url = "mongodb+srv://@cluster0.0uiweuy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 // app.use(express.json())
 // const cors = require("cors");
