@@ -1,0 +1,85 @@
+.form-container {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background: #cfd1d496;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.add {
+  background: #28a745;
+  color: white;
+}
+
+.btn.add:hover {
+  background: #218838;
+}
+
+.btn.edit {
+  background: #ffc107;
+  color: black;
+}
+
+.btn.edit:hover {
+  background: #e0a800;
+}

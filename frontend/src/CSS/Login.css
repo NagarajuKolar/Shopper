@@ -1,0 +1,86 @@
+
+.login-form {
+  width: 450px;
+  margin: 80px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+
+.logins {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #0056b3;
+}
+
+.logins a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #555;
+}
+
+.logins a:hover {
+  color: #000;
+}

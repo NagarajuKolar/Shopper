@@ -1,0 +1,61 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+
+.page-container button {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+.page-container button:hover:not(:disabled) {
+  background: #3c54db;
+  border-color: #aaa;
+}
+
+.page-container .page-active {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+
+
+.page-container button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+.page-container button:first-child,
+.page-container button:last-child {
+  font-size: 16px;
+}
+
+
+@media (max-width: 600px) {
+  .page-container {
+    gap: 6px;
+  }
+
+  .page-container button {
+    min-width: 32px;
+    height: 32px;
+    font-size: 13px;
+    padding: 0 6px;
+  }
+}

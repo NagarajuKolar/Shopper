@@ -1,0 +1,126 @@
+.dashboard-title{
+  font-size:28px;
+  font-weight:600;
+  margin-bottom:20px;
+  margin-top: 30px;
+    text-align: center;
+}
+
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-auto-rows:200px;
+  gap:20px;
+}
+
+.dashboard-card{
+  border-radius:14px;
+  padding:20px;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  transition:transform 0.2s ease;
+}
+
+.dashboard-card:hover{
+  transform:translateY(-6px) scale(1.02);
+}
+
+.dashboard-card-icon{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.dashboard-card h3{
+  font-size:16px;
+  margin-bottom:5px;
+  font-weight:500;
+}
+
+.dashboard-card p{
+  font-size:28px;
+  font-weight:700;
+}
+
+.growth{
+  margin-top:6px;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  font-size:14px;
+}
+
+.positive{
+color: #00f75b;
+}
+
+.negative{
+  color:#ef4444;
+}
+
+.users{
+  background:linear-gradient(135deg,#1e3a8a,#3b82f6,#1e40af);
+}
+
+.products{
+  background:linear-gradient(135deg,#059669,#10b981,#047857);
+}
+
+.orders{
+  background:linear-gradient(135deg,#f59e0b,#fb923c,#ea580c);
+}
+
+.pending{
+  background:linear-gradient(135deg,#ef4444,#f87171,#b91c1c);
+}
+
+.today{
+  background:linear-gradient(135deg,#0ea5e9,#38bdf8,#0284c7);
+}
+
+.revenue{
+  background: linear-gradient(135deg, #3f8558, #3c6b4d, #2e5e58);
+  grid-row:span 2;
+}
+.revenue-extra{
+  margin-top:14px;
+  font-size:14px;
+  opacity:0.9;
+}
+
+.revenue-extra strong{
+  display:block;
+  font-size:20px;
+  margin-top:3px;
+}
+@media (max-width:900px){
+
+.dashboard-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+.revenue{
+  grid-row:span 1;
+}
+
+}
+@media (max-width:576px){
+
+.dashboard-grid{
+  grid-template-columns:1fr;
+  grid-auto-rows:160px;
+}
+
+.dashboard-title{
+  font-size:22px;
+}
+
+.dashboard-card p{
+  font-size:24px;
+}
+
+}

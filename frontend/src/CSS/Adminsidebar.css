@@ -1,0 +1,4 @@
+/* hide sidebar off-screen on mobile */
+.start-n100 {
+  left: -100%;
+}

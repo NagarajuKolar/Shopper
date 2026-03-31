@@ -1,0 +1,128 @@
+.review-box {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.review-box h3 {
+  margin-bottom: 12px;
+}
+
+/* Stars */
+
+.stars-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.star {
+  cursor: pointer;
+  color: #ddd;
+  transition: 0.2s;
+}
+
+.star.active {
+  color: #f5b301;
+}
+.img-error {
+  color: red;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+
+.rating-text {
+  margin-left: 15px;
+  font-weight: 600;
+  color: #312a28;
+}
+
+/* Inputs */
+
+.review-box textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  resize: vertical;
+}
+
+
+/* Upload */
+
+.upload-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px dashed #aaa;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.upload-box:hover {
+  background: #f7f7f7;
+}
+/* Preview Grid */
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 90px);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.preview-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.remove-img {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+
+/* Button */
+
+.submit-btn {
+  float: right;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #e55d00;
+}
+
+.img-count {
+  margin-top: 10px;
+  color: #555;
+}

@@ -1,0 +1,187 @@
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  padding: 20px;
+}
+
+
+
+.filter-panel {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  height: fit-content;
+  position: sticky;
+  top: 50px;
+}
+
+.filter-title {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.filter-chip {
+  background: #eef4ff;
+  color: #333;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #d6e4ff;
+}
+
+.filter-chip span {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.filter-chip span:hover {
+  color: #e53935;
+}
+
+
+.filter-section {
+  margin-top: 14px;
+}
+
+.filter-section h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.header-side-section{
+  display: flex;
+  justify-content: space-between;
+}
+.clear-filters-btn{
+  color: #0056b3;
+  cursor: pointer;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+
+
+
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 28px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+}
+
+.avgrating.has-review {
+  color: #222;
+}
+
+.avgrating.has-review span.star {
+  color: #f5a623;
+}
+
+.avgrating.no-review {
+  color: #999;
+  font-style: italic;
+}
+
+.product-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #333;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+.product-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.product-btn:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 900px) {
+
+  .shop-layout {
+     grid-template-columns: 260px 1fr;
+  }
+
+  .filter-panel {
+    position: relative;
+  }
+
+}
